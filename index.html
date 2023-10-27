@@ -1,0 +1,148 @@
+<html>
+    <head>
+ <style>
+    body{
+        font-family: arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #d6cfcf;
+    }
+    header{
+        background-color: rgb(68, 64, 64);
+        color: #ffff;
+        text-align: center;
+        padding: 2rem 0;
+        position: relative;
+    }
+    .header content{
+        font-size: 2.5rem;
+    }
+    .profile-pic{
+width: 100px;
+height: 100px;
+border-radius: 75%;
+object-fit: cover;
+position: absolute;
+top: 25px;
+left: 75px;
+    }
+    nav{
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    nav ul li{
+
+        display: inline;
+        margin: 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+    }
+    .section-content{
+        background-color: #fff;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .view-button{
+        background-color: #333;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 20px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .view-button:hover{
+        background-color: #555;
+    }
+    footer{
+        text-align: center;
+        padding: 1rem 0;
+        background-color: #333;
+        color: #fff;
+    }
+    ul{
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+    h1{
+        color:white;
+    }
+    h2{
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    
+ </style>
+    </head>
+    <body>
+        <header> 
+            <div class="header-content">
+                <img src="Picsart_23-10-27_00-09-51-668.jpg" class="profile-pic">
+                <h1>Sooriya Dhev</h1>
+            </div>
+        </header>
+            <nav>
+                <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#certificate">CERTIFICATE</a></li>
+        </ul>
+            </nav>
+            <section id="#about">
+                <div class="section-content">
+                    <h2>About me</h2>
+                    <p>hello everyone, this is sooriya dhev and im a frontend developer.</p>
+                </div>
+            </section>
+            <section id="education">
+                <div class="section-content">
+                    <h2>EDUCATION</h2>
+                    <p>Completed my +1 and +2 in C.R.H.S.S<br>Doing my UG on Manonmaniyam Sundaranar University-BCA<br> batch 2021-2024</p>
+                </div>
+            </section>
+            <section id="skills">
+                <div class="section-content">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <LI>CSS</LI>
+                        <LI>JS</LI>
+                        <li>PYTHON</li>
+                        <li>UI/UX DESIGNING</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="certificate">
+                <div class="section-content">
+                    <h2>COURSE COMPLETION</h2>
+                    <a href="SB completion cf.pdf" class="view-button">View Certificate</a>
+                </div>
+            </section>
+            <footer><p>&copy; 2023 Sooriya Dhev</p></footer>
+            <script>
+                document.querySelectorAll('a[href="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e)
+                {
+                    const targetID = this.getAttribute('href').substring(1);
+                    const targeElement = document.getElementById(targtID);
+
+                    if (targetElement){
+                        window.scrollTo({top: targetElement.offsetTop, behavior: 'smooth'});
+
+                    }
+                                });
+                            });
+            </script>
+
+    </body>
+</html>
